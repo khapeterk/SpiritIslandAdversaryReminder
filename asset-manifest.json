@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/khapeterk/SpiritIslandAdversaryReminder/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/khapeterk/SpiritIslandAdversaryReminder/static/js/main.48da737e.chunk.js",
+    "main.js.map": "/khapeterk/SpiritIslandAdversaryReminder/static/js/main.48da737e.chunk.js.map",
+    "runtime-main.js": "/khapeterk/SpiritIslandAdversaryReminder/static/js/runtime-main.73d86524.js",
+    "runtime-main.js.map": "/khapeterk/SpiritIslandAdversaryReminder/static/js/runtime-main.73d86524.js.map",
+    "static/js/2.bd542f63.chunk.js": "/khapeterk/SpiritIslandAdversaryReminder/static/js/2.bd542f63.chunk.js",
+    "static/js/2.bd542f63.chunk.js.map": "/khapeterk/SpiritIslandAdversaryReminder/static/js/2.bd542f63.chunk.js.map",
+    "static/js/3.9edb28d1.chunk.js": "/khapeterk/SpiritIslandAdversaryReminder/static/js/3.9edb28d1.chunk.js",
+    "static/js/3.9edb28d1.chunk.js.map": "/khapeterk/SpiritIslandAdversaryReminder/static/js/3.9edb28d1.chunk.js.map",
+    "index.html": "/khapeterk/SpiritIslandAdversaryReminder/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/khapeterk/SpiritIslandAdversaryReminder/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.bd542f63.chunk.js.LICENSE.txt": "/khapeterk/SpiritIslandAdversaryReminder/static/js/2.bd542f63.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/khapeterk/SpiritIslandAdversaryReminder/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73d86524.js",
+    "static/js/2.bd542f63.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.48da737e.chunk.js"
+  ]
+}
