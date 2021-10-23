@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/SpiritIslandAdversaryReminder/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/SpiritIslandAdversaryReminder/static/js/main.48da737e.chunk.js",
-    "main.js.map": "/SpiritIslandAdversaryReminder/static/js/main.48da737e.chunk.js.map",
-    "runtime-main.js": "/SpiritIslandAdversaryReminder/static/js/runtime-main.8d78c0a7.js",
-    "runtime-main.js.map": "/SpiritIslandAdversaryReminder/static/js/runtime-main.8d78c0a7.js.map",
-    "static/js/2.bd542f63.chunk.js": "/SpiritIslandAdversaryReminder/static/js/2.bd542f63.chunk.js",
-    "static/js/2.bd542f63.chunk.js.map": "/SpiritIslandAdversaryReminder/static/js/2.bd542f63.chunk.js.map",
-    "static/js/3.9edb28d1.chunk.js": "/SpiritIslandAdversaryReminder/static/js/3.9edb28d1.chunk.js",
-    "static/js/3.9edb28d1.chunk.js.map": "/SpiritIslandAdversaryReminder/static/js/3.9edb28d1.chunk.js.map",
+    "main.css": "/SpiritIslandAdversaryReminder/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/SpiritIslandAdversaryReminder/static/js/main.bbe1e639.chunk.js",
+    "main.js.map": "/SpiritIslandAdversaryReminder/static/js/main.bbe1e639.chunk.js.map",
+    "runtime-main.js": "/SpiritIslandAdversaryReminder/static/js/runtime-main.ec90e335.js",
+    "runtime-main.js.map": "/SpiritIslandAdversaryReminder/static/js/runtime-main.ec90e335.js.map",
+    "static/js/2.0c179be7.chunk.js": "/SpiritIslandAdversaryReminder/static/js/2.0c179be7.chunk.js",
+    "static/js/2.0c179be7.chunk.js.map": "/SpiritIslandAdversaryReminder/static/js/2.0c179be7.chunk.js.map",
+    "static/js/3.1107c977.chunk.js": "/SpiritIslandAdversaryReminder/static/js/3.1107c977.chunk.js",
+    "static/js/3.1107c977.chunk.js.map": "/SpiritIslandAdversaryReminder/static/js/3.1107c977.chunk.js.map",
     "index.html": "/SpiritIslandAdversaryReminder/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/SpiritIslandAdversaryReminder/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.bd542f63.chunk.js.LICENSE.txt": "/SpiritIslandAdversaryReminder/static/js/2.bd542f63.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/SpiritIslandAdversaryReminder/static/media/logo.6ce24c58.svg"
+    "static/css/main.6dea0f05.chunk.css.map": "/SpiritIslandAdversaryReminder/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.0c179be7.chunk.js.LICENSE.txt": "/SpiritIslandAdversaryReminder/static/js/2.0c179be7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d78c0a7.js",
-    "static/js/2.bd542f63.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.48da737e.chunk.js"
+    "static/js/runtime-main.ec90e335.js",
+    "static/js/2.0c179be7.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.bbe1e639.chunk.js"
   ]
 }
