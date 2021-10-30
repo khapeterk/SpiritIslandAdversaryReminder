@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/SpiritIslandAdversaryReminder/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/SpiritIslandAdversaryReminder/static/js/main.5fff4a46.chunk.js",
-    "main.js.map": "/SpiritIslandAdversaryReminder/static/js/main.5fff4a46.chunk.js.map",
-    "runtime-main.js": "/SpiritIslandAdversaryReminder/static/js/runtime-main.8d78c0a7.js",
-    "runtime-main.js.map": "/SpiritIslandAdversaryReminder/static/js/runtime-main.8d78c0a7.js.map",
-    "static/js/2.b339c7f3.chunk.js": "/SpiritIslandAdversaryReminder/static/js/2.b339c7f3.chunk.js",
-    "static/js/2.b339c7f3.chunk.js.map": "/SpiritIslandAdversaryReminder/static/js/2.b339c7f3.chunk.js.map",
-    "static/js/3.9edb28d1.chunk.js": "/SpiritIslandAdversaryReminder/static/js/3.9edb28d1.chunk.js",
-    "static/js/3.9edb28d1.chunk.js.map": "/SpiritIslandAdversaryReminder/static/js/3.9edb28d1.chunk.js.map",
+    "main.js": "/SpiritIslandAdversaryReminder/static/js/main.4006c8bf.chunk.js",
+    "main.js.map": "/SpiritIslandAdversaryReminder/static/js/main.4006c8bf.chunk.js.map",
+    "runtime-main.js": "/SpiritIslandAdversaryReminder/static/js/runtime-main.764b0e9e.js",
+    "runtime-main.js.map": "/SpiritIslandAdversaryReminder/static/js/runtime-main.764b0e9e.js.map",
+    "static/js/2.6aa93621.chunk.js": "/SpiritIslandAdversaryReminder/static/js/2.6aa93621.chunk.js",
+    "static/js/2.6aa93621.chunk.js.map": "/SpiritIslandAdversaryReminder/static/js/2.6aa93621.chunk.js.map",
+    "static/js/3.bde2cd9a.chunk.js": "/SpiritIslandAdversaryReminder/static/js/3.bde2cd9a.chunk.js",
+    "static/js/3.bde2cd9a.chunk.js.map": "/SpiritIslandAdversaryReminder/static/js/3.bde2cd9a.chunk.js.map",
     "index.html": "/SpiritIslandAdversaryReminder/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/SpiritIslandAdversaryReminder/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.b339c7f3.chunk.js.LICENSE.txt": "/SpiritIslandAdversaryReminder/static/js/2.b339c7f3.chunk.js.LICENSE.txt"
+    "static/js/2.6aa93621.chunk.js.LICENSE.txt": "/SpiritIslandAdversaryReminder/static/js/2.6aa93621.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d78c0a7.js",
-    "static/js/2.b339c7f3.chunk.js",
+    "static/js/runtime-main.764b0e9e.js",
+    "static/js/2.6aa93621.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.5fff4a46.chunk.js"
+    "static/js/main.4006c8bf.chunk.js"
   ]
 }
