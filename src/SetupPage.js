@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { RadioButton } from './Reusable';
 import data from './data';
-import { RadioButtonWithKey } from './Reusable';
+import { removeMultipleRandomFromArray } from './Utils';
 
 export default function SetupPage(props) {
     const { incrementAppIndex, decrementAppIndex, currentAdversary, currentLevel } = props;
@@ -14,25 +15,14 @@ export default function SetupPage(props) {
         "THE KINGDOM OF FRANCE (PLANTATION COLONY)": [1, 2, 3],
         "THE KINGDOM OF BRANDENBURG-PRUSSIA": [1],
     };
-    if (adversaries[currentAdversary].name === "THE KINGDOM OF BRANDENBURG-PRUSSIA" && currentLevel > 1) {
-        adversarySetup[adversaries[currentAdversary].name].push(currentLevel);
-    }
+    adversarySetup["THE KINGDOM OF BRANDENBURG-PRUSSIA"].push(currentLevel);
     const displayLevels = adversarySetup[adversaries[currentAdversary].name].filter(level => level <= currentLevel);
     const numberOfPlayersOptions = [1, 2, 3, 4, 5, 6];
     const boardsOptions = ['A', 'B', 'C', 'D', 'E', 'F'];
     const [selectedNumberOfPlayers, setSelectedNumberOfPlayers] = useState(1);
     const [selectedBoards, setSelectedBoards] = useState([]);
-    const getRandomBoards = () => {
-        let currentBoardsOptions = [...boardsOptions];
-        let temporaryBoards = [];
-        for (let i = 0; i < selectedNumberOfPlayers; i++) {
-            temporaryBoards.push(currentBoardsOptions.splice(Math.floor(Math.random() * currentBoardsOptions.length), 1)[0])
-        }
-        setSelectedBoards(temporaryBoards);
-    }
-    const onClickNumberOfPlayers = (event) => {
-        setSelectedNumberOfPlayers(event.target.value);
-    }
+    const getRandomBoards = () => { setSelectedBoards(removeMultipleRandomFromArray(boardsOptions, selectedNumberOfPlayers)) }
+    const onClickNumberOfPlayers = (event) => { setSelectedNumberOfPlayers(parseInt(event.target.value)); }
     return (
         <div>
             <header>Setup</header>
@@ -46,10 +36,10 @@ export default function SetupPage(props) {
             <button onClick={decrementAppIndex}>Back</button>
             <button onClick={incrementAppIndex}>Start Game</button>
             <header>Board Setup</header>
-            {numberOfPlayersOptions.map((number) => <RadioButtonWithKey onClick={onClickNumberOfPlayers} group="NumberOfPlayers" name={number + (number === 1 ? ' Player' : ' Players')} value={number} index={number} />)}
-            <button onClick={getRandomBoards}>Randomize Boards</button>
+            {numberOfPlayersOptions.map((number) => <RadioButton onClick={onClickNumberOfPlayers} group="NumberOfPlayers" name={number + (number === 1 ? ' Player' : ' Players')} value={number} key={number} currentValue={selectedNumberOfPlayers} />)}
+            <button onClick={getRandomBoards} disabled={selectedNumberOfPlayers === 6}>Randomize Boards</button>
             <div>
-                {selectedBoards}
+                {selectedNumberOfPlayers === 6 ? 'All Boards' : selectedBoards.join(', ')}
             </div>
         </div>
     )

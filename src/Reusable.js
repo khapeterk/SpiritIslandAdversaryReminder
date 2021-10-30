@@ -1,24 +1,14 @@
-function RadioButtonWithKey(props) {
-    const { group, name, value, index } = props;
-    return (
-        <div key={index}>
-            <input type="radio" id={name} name={group} value={value} onClick={props.onClick} />
-            <label htmlFor={name}>{name}</label>
-        </div>
-    )
-}
-
 function RadioButton(props) {
-    const { group, name, value } = props;
+    const { group, name, value, currentValue } = props;
     return (
-        <div>
-            <input type="radio" id={name} name={group} value={value} onClick={props.onClick} />
-            <label htmlFor={name}>{name}</label>
-        </div>
+        <label>
+            <input type="radio" name={group} value={value} onClick={props.onClick} checked={currentValue === value} readOnly/>
+            {name}
+        </label>
+
     )
 }
 
 export {
-    RadioButton,
-    RadioButtonWithKey
+    RadioButton
 }

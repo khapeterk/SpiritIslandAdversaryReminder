@@ -4,7 +4,7 @@ import InGamePage from './InGamePage';
 import SetupPage from './SetupPage';
 
 function App() {
-  const [currentLevel, setCurrentLevel] = useState(0);
+  const [currentLevel, setCurrentLevel] = useState("1");
   const [currentAdversary, setCurrentAdversary] = useState(0);
   const [currentAppIndex, setCurrentAppIndex] = useState(0);
   const countAppPages = 3;
@@ -14,6 +14,7 @@ function App() {
   const renderPage = () => {
     if (currentAppIndex === 0) {
       return <HomePage
+        currentLevel={currentLevel}
         currentAdversary={currentAdversary}
         setCurrentLevel={setCurrentLevel}
         setCurrentAdversary={setCurrentAdversary}
