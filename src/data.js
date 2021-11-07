@@ -255,6 +255,38 @@ const data = {
             "Special Rules": "SHADOWS OF THE DAHAN\nWhenever you use a Power, you may pay 1 Energy to target a land with DAHAN regardless of the Power's Range. (Power Cards or your Innate Powers.)",
             SpecialRulePhases: ['Fast Powers', 'Slow Powers', 'Event']
         },
+        {
+            Name: "Thunderspeaker",
+            Setup: "Put 2 PRESENCE on your starting board: 1 in each of the 2 lands with the most DAHAN",
+            "Play Style": "Has a keen interest in where the Dahan are - partly because so many of its starting powers work through them partly because its Presence can move along with them. When picking new Power Cards, it will often want to take good Dahan-centric Powers, but it can also branch out into other areas.",
+            Complexity: "Moderate",
+            "Special Rules": "ALLY OF THE DAHAN\nYour PRESENCE may move with DAHAN. (Whenever a DAHAN moves from 1 of your lands to another land, you may move 1 PRESENCE along with it.)\nSWORN TO VICTORY\nAfter a Ravage Action destroys 1 or more DAHAN, for each DAHAN Destroyed, Destroy 1 of your PRESENCE within 1 RANGE.[1][2]",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "A Spread of Rampant Green",
+            Setup: "Put 2 PRESENCE on your starting board; 1 in the highest-numbered Wetland, and 1 in the Jungle without any DAHAN. (If there is more than 1 such Jungle, you may choose)",
+            "Play Style": "Fairly good at dealing with Towns, but terrible at handling Explorers (who are unfazed by prolific foliage). Can get Presence onto the board faster than most other Spirits. Extra Presence is good for targeting and especially for 'Choke the Land with Green', which can be extremely effective at slowing down invaders. Just be careful not to destroy Sacred Sites needed for Power use.",
+            Complexity: "Moderate",
+            "Special Rules": "CHOKE THE LAND WITH GREEN\nWhenever Invaders would Ravage or Build in a land with your Sacredsiteicon.png, you may prevent it by destroying one of your PRESENCE in that land.\nSTEADY REGENERATION\nWhen adding PRESENCE to the board via Growth, you may optionally use your destroyed PRESENCE. If the island is Healthy, do so freely. If the island is Blighted, doing so costs 1 Energy per destroyed PRESENCE you add.",
+            SpecialRulePhases: ['Growth', 'Ravage', 'Build']
+        },
+        {
+            Name: "Ocean's Hungry Grasp",
+            Setup: "Put 2 PRESENCE onto your starting board: 1 in the Ocean, and 1 in a Coastal land of your choice.",
+            "Play Style": "Extremely good at assaulting the coasts where the Invaders start out strong, but quite weak island - the ocean is not accustomed to affecting events so far ashore. Its Presence shifts in and out like the tide, which can be tricky to manage, but permits re-positioning and tactical retreats or offensives in the hands of a skillful player. Has fairly inexpensive Unique Powers, but the energy gained from drowning Invaders can be necessary in stepping up to more potent Powers.",
+            Complexity: "High",
+            "Special Rules": "OCEAN IN PLAY\nYou may add/move PRESENCE into Oceans, but may not add/move PRESENCE into Inland lands. On boards where you have 1 or more PRESENCE, Oceans are treated as Coastal Wetlands for Spirit Powers/Special Rules and Blighticon.png. You Drown any Invaders or DAHAN moved to those Oceans.\nDROWNING\nDestroy Drowned pieces, placing Drowned Invaders here. At any time you may exchange (X) Health of these Invaders for 1 Energy, where X = number of players. (Ignore modifiers to Invader Health.)",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Bringer of Dreams and Nightmares",
+            Setup: "Put 2 PRESENCE on your starting board in the highest-numbered Sands.",
+            "Play Style": "With most Spirits, Terror Victories are a backup plan if the main push against the Invaders stalls out for too long, but Bringer turns Fear into a more viable primary strategy. Its transformation of damage & destruction into Fear can turn Major Powers into tremendous sources of terror and panic. However, the only real offense Bringer has is the Dahan fighting back. While it does have some defensive ability, it is fundamentally poor at clearing areas of Invaders.",
+            Complexity: "High",
+            "Special Rules": "TO DREAM A THOUSAND DEATHS\nYour Powers never cause Damage, nor can they Destroy anything other than your own PRESENCE.\nWhen your Powers would Destroy (or deal enough Damage to Destroy) Explorericon.png/Townicon.png/Citiyicon.png, instead generate 0/2/5 Fearicon.png. The Power Pushes all Explorericon.png/Townicon.png it would Destroy.\nNotes: A single Power cannot Destroy a given Invader more than once. Powers that cause Damage via DAHAN are affected just like all others. All effects other than Damage/Destroy work as usual.",
+            SpecialRulePhases: ['All']
+        },
     ]
 }
 

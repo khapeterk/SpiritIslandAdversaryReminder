@@ -1,15 +1,20 @@
+import { useState } from 'react';
 import data from './data';
 import { boldText, RadioButton, pageHeader } from './Reusable';
-import { getSpiritComplexities, getSpiritNames, getSpiritPlayStyle } from './Utils';
+import { getSpiritComplexities, getSpiritNamesForComplexity, getSpiritPlayStyle } from './Utils';
 
 export default function HomePage(props) {
     let { currentLevel, currentAdversary, setCurrentLevel, setCurrentAdversary, incrementAppIndex, selectedSpirit, setSelectedSpirit } = props;
+    const [spiritSelectState, setSpiritSelectState] = useState({ complexity: 'All', names: getSpiritNamesForComplexity('All') });
     const onClickLevel = (e) => { setCurrentLevel(e.target.value) };
     const onClickAdversary = (e) => { setCurrentAdversary(parseInt(e.target.value)) };
     const onClickSpirit = (e) => { setSelectedSpirit(e.target.value) };
+    const onClickComplexity = (e) => {
+        let complexity = e.target.value;
+        setSpiritSelectState({ complexity: complexity, names: getSpiritNamesForComplexity(complexity) });
+    };
     const adversaries = data.adversaries;
     const adversaryNames = adversaries.map(adversary => adversary.Name);
-    const spiritNames = getSpiritNames();
     const complexities = getSpiritComplexities();
     const renderAdversariesRadioButtons = () => {
         return adversaryNames.map((adversary, index) =>
@@ -22,26 +27,16 @@ export default function HomePage(props) {
                 key={index} />
         )
     }
-    const renderSpiritsRadioButtons = () => {
-        return spiritNames.map((name, index) =>
-            <RadioButton
-                onClick={onClickSpirit}
-                group="spirit"
-                value={name}
-                name={name}
-                currentValue={selectedSpirit}
-                key={index} />)
-    }
     return (
         <div>
             {pageHeader("Spirit Island Game Reminders")}
             <div>{boldText("Select an Adversary")}</div>
-            <div style={{ display: 'flex', flexDirection: 'column', padding: '0 20px'}}>
+            <div style={{ display: 'flex', flexDirection: 'column', padding: '0 20px' }}>
                 {renderAdversariesRadioButtons()}
             </div>
             <div>
                 <div>{boldText("Select a difficulty level")}</div>
-                <table style={{padding: '0 20px'}}>
+                <table style={{ padding: '0 20px' }}>
                     <thead>
                         <tr>
                             <th></th>
@@ -87,22 +82,34 @@ export default function HomePage(props) {
             <div>
                 <div>
                     <div>{boldText("Select a Spirit")}</div>
-                    <div style={{padding: '0 20px'}}>
+                    <div style={{ padding: '0 20px' }}>
                         <div>
                             By Complexity:
-                            {complexities.map((complexity) => <RadioButton group="complexity" name={complexity} />)}
+                            {complexities.map((complexity, index) => <RadioButton onClick={onClickComplexity} group="complexity" name={complexity} value={complexity} currentValue={spiritSelectState.complexity} key={index} />)}
                         </div>
                         <div style={{ display: 'flex', flexDirection: 'column' }}>
-                            {renderSpiritsRadioButtons()}
+                            <SpiritsRadioButtons spiritSelectState={spiritSelectState} selectedSpirit={selectedSpirit} onClickSpirit={onClickSpirit} />
                         </div>
                     </div>
                 </div>
                 <div>
                     <div>{boldText("Selected Spirit's Play Style")}</div>
-                    <div style={{padding: '0 20px'}}>{getSpiritPlayStyle(selectedSpirit)}</div>
+                    <div style={{ padding: '0 20px' }}>{getSpiritPlayStyle(selectedSpirit)}</div>
                 </div>
             </div>
             <button onClick={incrementAppIndex}>Setup</button>
         </div>
     )
+}
+
+function SpiritsRadioButtons(props) {
+    const { spiritSelectState, selectedSpirit, onClickSpirit } = props;
+    return spiritSelectState.names.map((name, index) =>
+        <RadioButton
+            onClick={onClickSpirit}
+            group="spirit"
+            value={name}
+            name={name}
+            currentValue={selectedSpirit}
+            key={index} />)
 }

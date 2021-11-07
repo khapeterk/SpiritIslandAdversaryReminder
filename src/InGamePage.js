@@ -20,8 +20,8 @@ export default function InGamePage(props) {
         if (phasesToRender.includes(phaseNames[currentIndex]) || phasesToRender[0] === 'All') {
             return (
                 <>
-                <div>{boldText(selectedSpirit + " Special Rules")}</div>
-                <div style={{padding: '0 20px'}}>{getSpiritSpecialRules(selectedSpirit)}</div>
+                    <div>{boldText(selectedSpirit + " Special Rules")}</div>
+                    <div style={{ padding: '0 20px' }}>{getSpiritSpecialRules(selectedSpirit)}</div>
                 </>
             )
         }

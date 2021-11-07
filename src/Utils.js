@@ -19,13 +19,17 @@ function removeMultipleRandomFromArray(array, count) {
 
 function getSpiritComplexities() {
     const complexities = new Set();
-    data.spirits.forEach((spirit) => complexities.add(spirit.Complexity));
+    complexities.add('All');
+    data.spirits.forEach((spirit) => {
+        complexities.add(spirit.Complexity);
+    })
     return Array.from(complexities);
 }
 
-function getSpiritNames() {
-    return data.spirits.map((spirit) => spirit.Name);
+function getSpiritNamesForComplexity(complexity) {
+    return data.spirits.filter((spirit) => spirit.Complexity === complexity || complexity === 'All').map((spirit) => spirit.Name);
 }
+
 
 function getSpiritsMap() {
     const spirits = {}
@@ -55,7 +59,7 @@ export {
     getRandomIndex,
     removeMultipleRandomFromArray,
     getSpiritComplexities,
-    getSpiritNames,
+    getSpiritNamesForComplexity,
     getSpiritSetup,
     getSpiritPlayStyle,
     getSpiritSpecialRulePhases,
