@@ -258,7 +258,7 @@ const data = {
         {
             Name: "Thunderspeaker",
             Setup: "Put 2 PRESENCE on your starting board: 1 in each of the 2 lands with the most DAHAN",
-            "Play Style": "Has a keen interest in where the Dahan are - partly because so many of its starting powers work through them partly because its Presence can move along with them. When picking new Power Cards, it will often want to take good Dahan-centric Powers, but it can also branch out into other areas.",
+            "Play Style": "Has a keen interest in where the Dahan are - partly because so many of its starting powers work through them, partly because its Presence can move along with them. When picking new Power Cards, it will often want to take good Dahan-centric Powers, but it can also branch out into other areas.",
             Complexity: "Moderate",
             "Special Rules": "ALLY OF THE DAHAN\nYour PRESENCE may move with DAHAN. (Whenever a DAHAN moves from 1 of your lands to another land, you may move 1 PRESENCE along with it.)\nSWORN TO VICTORY\nAfter a Ravage Action destroys 1 or more DAHAN, for each DAHAN Destroyed, Destroy 1 of your PRESENCE within 1 RANGE.[1][2]",
             SpecialRulePhases: ['All']
@@ -285,6 +285,134 @@ const data = {
             "Play Style": "With most Spirits, Terror Victories are a backup plan if the main push against the Invaders stalls out for too long, but Bringer turns Fear into a more viable primary strategy. Its transformation of damage & destruction into Fear can turn Major Powers into tremendous sources of terror and panic. However, the only real offense Bringer has is the Dahan fighting back. While it does have some defensive ability, it is fundamentally poor at clearing areas of Invaders.",
             Complexity: "High",
             "Special Rules": "TO DREAM A THOUSAND DEATHS\nYour Powers never cause Damage, nor can they Destroy anything other than your own PRESENCE.\nWhen your Powers would Destroy (or deal enough Damage to Destroy) Explorericon.png/Townicon.png/Citiyicon.png, instead generate 0/2/5 Fearicon.png. The Power Pushes all Explorericon.png/Townicon.png it would Destroy.\nNotes: A single Power cannot Destroy a given Invader more than once. Powers that cause Damage via DAHAN are affected just like all others. All effects other than Damage/Destroy work as usual.",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Sharp Fangs Behind the Leaves",
+            Setup: "Put 1 Presenceicon.png and 1 {{{width}}}px on your starting board in the highest-numbered Jungle. Put 1 Presenceicon.png in a land of your choice with {{{width}}}px anywhere on the island.",
+            "Play Style": "All about Beasts and Jungles. Can be very fast out of the gate, but doesn't have the late-game power that some spirits do, and is likely to have some difficulty with Blighted areas. \"Ranging Hunt\" is a critical Innate ability, particularly in early-game: it simultaneously gives Beasts mobility and permits picking off a stray Explorers or Towns on most turns.",
+            Complexity: "Moderate",
+            "Special Rules": "ALLY OF THE BEASTS\nYour Presenceicon.png may move with {{{width}}}px. (Whenever a {{{width}}}px moves from 1 of your lands to another land, you may move 1 Presenceicon.png along with it.)\nCALL FORTH PREDATORS\nDuring each Spirit Phase, you may replace 1 of your Presenceicon.png with 1 {{{width}}}px. The replaced Presenceicon.png leaves the game. (It was not destroyed, so things which return destroyed Presenceicon.png cannot bring it back.)",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Keeper of the Forbidden Wilds",
+            Setup: "Put 1 Presenceicon.png and 1 Wildicon.png on your starting board in the highest-numbered Jungle.",
+            "Play Style": "A slowly growing wall - expanding can sometimes be difficult, but the Invaders will have an equally difficult time penetrating wherever the Keeper plants itself.\nIn larger games, it may be useful to spread to one of the two far-distant lands early on, to have multiple points from which to slowly grow.",
+            Complexity: "Moderate",
+            "Special Rules": "FORBIDDEN GROUND\nAny time you create a Sacredsiteicon.png, Push all Dahanicon.png from that land. Dahan Events never move Dahanicon.png to your Sacredsiteicon.png, but Powers can do so.",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Heart of the Wildfire",
+            Setup: "Put 3 Presenceicon.png and 2 Blighticon.png on your starting board in the highest-numbered Sands. (Blighticon.png comes from the box, not the Blight Card)",
+            "Play Style": "Starts with good offense and gets better from there, but lays down Blight as it grows. The smaller the game, the more restraint is needed to prevent tipping the island over into being completely Blighted. The Wildfire can heal the land where it is, but may benefit from other Blight removal Powers so it can add Presence to problem lands without triggering Blight cascade. Removing Blight from its own lands limits its \"Firestorm\" innate power, however.",
+            Complexity: "High",
+            "Special Rules": "BLAZING PRESENCE\nAfter you add or move Presenceicon.png after Setup, in the land it goes to:\nFor each Simple fire.png showing on your Presenceicon.png Tracks, do 1 Damage.\nIf 2 Simple fire.png or more are showing on your Presenceicon.png Tracks, add 1 Blighticon.png.\nPush all {{{width}}}px and any number of Dahanicon.png.\nIf you add multiple Presenceicon.png into a land at the same time, only do the above effects once.\nDESTRUCTIVE NATURE\nBlighticon.png added due to Spirit Effects (Powers, Special Rules, Scenario-based Rituals, etc) does not destroy your Presenceicon.png. (This includes cascades.)",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Serpent Slumbering Beneath the Island",
+            Setup: "Put 1 Presenceicon.png on your starting board in the land #5.",
+            "Play Style": "There are several ways to play the Serpent, but all require patience: early game involves slowly building up Powers and Presence. It's not helpless during this time, but it isn't as effective as anyone else. It becomes incredibly powerful after awakening, but getting there requires a lot of time.\nMake sure to Absorb Essence before you run up against your Presence cap - and to get other players' buy-in before using Absorb Essence on their Presence.",
+            Complexity: "High",
+            "Special Rules": "You start off limited to 5 Presenceicon.png on the island. Raise this with your \"Absorb Essence\" Power Card. Each use covers the lowest revealed number; your Presenceicon.png limit is the lowest uncovered number. (5)(7)(8)(10)(11)(12)(13)",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Stone's Unyielding Defiance",
+            Setup: "Put 2 Presenceicon.png on your starting board: 1 in the lowest-numbered Mountain without Dahanicon.png; 1 in an adjacent land that has Blighticon.png (if possible) or is Sands (if not).",
+            "Play Style": "Most of its special rules and innates require being where the Invaders are - particularly in the worst, most-overrun lands, so it can mitigate incoming Blight and (eventually) destroy the Invaders with their own Ravages.\nDoes best with the patience to build up a position over time, and the temperance to hold some Energy in reserve so it can take advantage of Hold the Island Fast With a Bulwark of Will.",
+            Complexity: "Moderate",
+            "Special Rules": "BESTOW THE ENDURANCE OF BEDROCK\nWhen Blighticon.png is added to one of your lands, unless the Blighticon.png then outnumbers your Presenceicon.png, it does not cascade or destroy Presenceicon.png (yours or others').\nDEEP LAYERS EXPOSED TO THE SURFACE\nThe first time you uncover each of your \"+1 Card Play\" Presenceicon.png spaces, gain a Minor Power. (They're marked with Minorsymbol.png as a reminder.)",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Shifting Memory of Ages",
+            Setup: "Put 2 Presenceicon.png on your starting board in the highest-numbered land that is Sands or Mountain. Prepare 1 Simple moon.png, 1 Simple air.png, and 1 Simple earth.png marker (put them by your Special Rules).",
+            "Play Style": "Starts with little ability to influence the board - most of what it does in that regard will come from new Power Cards.\nExtremely good with Major Powers and usually wants to take them early and often. Can either try sprinting towards victory with its phenomenal Energy Growth or build up towards becoming a late-game powerhouse.",
+            Complexity: "Moderate",
+            "Special Rules": "LONG AGES OF KNOWLEDGE AND FORGETFULNESS\nWhen you would Forget a Power Card from your hand, you may instead discard it. (Max. once per Action.)\nINSIGHTS INTO THE WORLD'S NATURE\nSome of your Actions let you Prepare Element Markers, which are kept here until used. Choose the Elements freely. (I.e., you are not limited to Elements you have at the time.)\nEach Element Marker spent grants 1 of that Element for a single Action. (E.g., one Power use.)",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Grinning Trickster Stirs Up Trouble",
+            Setup: "Put 2 Presenceicon.png on your starting board: 1 in the highest-numbered land with Dahanicon.png, and 1 in land #4.",
+            "Play Style": "Requires some comfort with risk: both Overenthusiastic Arson and Let's See What Will Happen involve uncertainty about how the Fast Powers phase will pan out.\nCan be effective from the get-go, but benefits greatly from not working too hard, instead improving its capacity for mischief by adding Presenceicon.png and gaining Power Cards. Bonus Energy from Let's See What Will Happen can be extremely helpful in avoiding the distraction of gaining Energy elsewhere.",
+            Complexity: "Moderate",
+            "Special Rules": "A REAL FLAIR FOR DISCORD\nAfter one of your Powers adds Strifeicon.png in a land, you may pay 1 Energy to add 1 Strifeicon.png within 1 Rangeicon.png of that land.\nCLEANING UP MESSES IS A DRAG\nAfter one of your Powers Removes Blighticon.png, Destroy 1 of your Presenceicon.png. Ignore this rule for Let's See What Happens.",
+            SpecialRulePhases: ['Fast Powers', 'Event', 'Slow Powers']
+        },
+        {
+            Name: "Lure of the Deep Wilderness",
+            Setup: "Put 3 Presenceicon.png on your starting board: 2 in land #8, and 1 in land #7. Add 1 {{{width}}}px to land #8.",
+            "Play Style": "Very focused on the interior - its best options for coastal lands are \"draw the Invaders inland\" or \"turn Townicon.png/Citiyicon.png into Explorericon.png, then draw them inland\". Likes the interior to be dangerous, full of Badlands.png, BEAST, Diseaseicon.png, and Wildicon.png, ideally where its Presenceicon.png is.\nHas better-than-average potential for containing Invaders and setting up a zone safe from Explores, but the coasts may get messy while doing so.",
+            Complexity: "Moderate",
+            "Special Rules": "HOME OF THE ISLAND'S HEART\nYour Presenceicon.png may only be added/moved to lands that are Inland.\nENTHRALL THE FOREIGN EXPLORERS\nFor each of your Presenceicon.png in a land, ignore up to 2 Explorericon.png during the Ravage Step and any Ravage Actions.",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Many Minds Move as One",
+            Setup: "Put 1 Presenceicon.png and 1 {{{width}}}px on your starting board, in a land with {{{width}}}px. Note that you have 5 Unique Power Cards.",
+            "Play Style": "Requires heavy spatial thought for {{{width}}}px movement, due to its improved Push/Gather and large numbers of {{{width}}}px.\nHas no offense to start with, but an excellent stalling defense combined with Fearicon.png generation; outright Fear victories may be plausible in smaller games. Both Fear Cards and {{{width}}}px events are unpredictable, however, so swings of fortune are apt to be more relevant than usual.",
+            Complexity: "Moderate",
+            "Special Rules": "FLY FAST AS THOUGHT\nWhen you Gather or Push {{{width}}}px, they may come from or go to lands up to 2 distant (rather than adjacent only).\nA JOINING OF SWARMS AND FLOCKS\nYour Sacredsiteicon.png may also count as {{{width}}}px. (Note: You never have more than 1 Sacredsiteicon.png in a land, no matter how many Presenceicon.png you have there.)\n(If something changes a {{{width}}}px that is your Sacredsiteicon.png, it affects 2 of your Presenceicon.png there - e.g., Push 1 {{{width}}}px will Push 2 of your Presenceicon.png together.)",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Volcano Looming High",
+            Setup: "Put 1 Presenceicon.png on your starting board in a mountain of your choice. Push all Dahanicon.png from that land.",
+            "Play Style": "Benefits more than most Spirits from getting Presenceicon.png onto the board; in addition to the usual benefits, it can fuel an Explosive Eruption. This can result in a huge turn, but if overdone the following turn or two may be very constrained.\nBigger eruptions are extremely powerful, but cause Blighticon.png, and the Invaders may not provide the luxury of enough time to build up the desired pressure - judging the timing of when to erupt and for how much is a key part of playing this Spirit.",
+            Complexity: "Moderate",
+            "Special Rules": "MOUNTAIN HOME\nYour Presenceicon.png may only be added/moved into Mountain.\nCOLLAPSE IN A BLAST OF LAVA AND STEAM\nWhen your Presenceicon.png is destroyed, in that land, deal 1 Damage per destroyed Presenceicon.png to both Invaders and to Dahanicon.png.\nVOLCANIC PEAKS TOWER OVER THE LANDSCAPE\nYour Power Cards gain +1 Rangeicon.png if you have 3 or more Presenceicon.png in the origin land.",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Shroud of Silent Mist",
+            Setup: "Put 2 Presenceicon.png on your starting board: 1 in the highest-numbered Wetland and 1 in the highest-numbered Mountain.",
+            "Play Style": "Constantly shifting and moving its Presenceicon.png around the board. Hurt more than most by Presenceicon.png loss due to its desire to surround and envelop the Invaders.\nCan (slowly) clear the most built-up of lands, but its real strength is the free Fear from Slow and Silent Death.\nExtremely limited Energy income, but can stretch to Major Powers if it manages to gather enough Energy from its Special Rules.",
+            Complexity: "High",
+            "Special Rules": "GATHER POWER FROM THE COOL AND DARK\nOnce a turn, when you Gain a Power Card without Simple fire.png, gain 1 Energy.\nMISTS SHIFT AND FLOW\nWhen targeting a land with a Power, you may Gather 1 of your Presenceicon.png into the target or an adjacent land. This can enable you to meet Range and targeting requirements.\nSLOW AND SILENT DEATH\nInvaders and Dahanicon.png in your lands don't heal Damage.\nDuring Time Passes: 1 Fearicon.png (max. 5) per land of yours with Damaged Invaders. Gain 1 Energy per 3 lands of yours with Damaged Invaders.",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Vengeance as a Burning Plague",
+            Setup: "1 of your Presenceicon.png starts the game already Destroyed. Put 2 Presenceicon.png on your starting board: 1 in a land with Blighticon.png, 1 in a Wetland without Dahanicon.png.",
+            "Play Style": "Starts slow, facing an early choice whether to stop Builds (with Diseaseicon.png) or let them happen (to generate Fearicon.png and keep Diseaseicon.png on the island). Grows to be very effective at tearing into heavily-populated lands with lots of Blighticon.png and/or Diseaseicon.png, but setting those up may require some care... and make other Spirits unease, with how much Blighticon.png is piling up.",
+            Complexity: "High",
+            "Special Rules": "THE TERROR OF A SLOWLY UNFOLDING PLAGUE\nWhen Diseaseicon.png would prevent a Build on a board with your Presenceicon.png, you may let the Build happen (removing no Diseaseicon.png). If you do, 1 Fearicon.png.\nLINGERING PESTILENCE\nWhen your Presenceicon.png is destroyed by anything except a Spirit action, add 1 Diseaseicon.png where each destroyed Presenceicon.png was.\nWREAK VENGEANCE FOR THE LAND'S CORRUPTION\nYour actions treat Blighticon.png on the island as also being Badlands.png.",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Starlight Seeks Its Form",
+            Setup: "Put 1 Presenceicon.png on your starting board, in a land with Blighticon.png",
+            "Play Style": "A build-your-own-Spirit, capable of going in many different directions based on Elements picked, Growth choices selected, and Power Cards kept. Has a very high personal/visual complexity and a huge number of early-game options, but doesn't alter play much for other players at the table.\nAs it commits to choices, it loses versatility - not all paths will be good (or even possible) at all things. It especially wants a measure of adaptation to early Power Cards, rather than trying to pre-select a strategy.",
+            Complexity: "Very High",
+            "Special Rules": "GROWTH BEGETS GROWTH\nYou have 6 Presenceicon.png tracks. (As usual, you may add Presenceicon.png from any track.) 4 of the Presenceicon.png tracks are next to rows of Growth choices: these choices start unavailable. Upon emptying a Growth track, pick one of its two Growth choices to be immediately available. The other stays unavailable for the rest of the game (cover with a spare piece).\nAfter you add Presenceicon.png from a space marked Energyplus1.png, gain 1 Energy.\nSLOWLY COALESCING NATURE\nAfter revealing an Element.png, place 1 Element Marker of your choice on it. That element is permanent and is constantly available (As if pre-printed on the Presenceicon.png track.)",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Fractured Days Split the Sky",
+            Setup: "Put 3 Presenceicon.png on your starting board: 1 in the lowest-numbered land with 1 Dahanicon.png, and 2 in the highest-numbered land without Dahanicon.png. Deal 4 Minor and Major Powers face-up as your initial Days That Never Were cards; in a 1 or 2-player game, instead deal 6 of each. In a 1-board game, gain 1 Time.",
+            "Play Style": "Excellent at support and sweeping indirect effects, but starts off very limited otherwise. Several of its Unique Powers need setup to use well; it's entirely possible 1 or 2 of them may see no play in a given game.\nHas a hard time getting lots of Presenceicon.png onto the board. This can make targeting tricky, and may be quite dangerous if a Blighted Island effect Destroys Presenceicon.png.",
+            Complexity: "Very High",
+            "Special Rules": "FRAGMENTS OF SHATTERED TIME\nEach Presenceicon.png on this ability represents 1 Time. Many of your Powers require Time as an additional cost. Spend it when you Resolve the Power. (Not when you play it.)\nWhen you Gain 1 Time, put 1 of your Presenceicon.png here from your Presenceicon.png track (or, optionally, the island). When you Spend 1 Time, return it to a Presenceicon.png track - or if you have no free spaces, Destroy it.\nDAYS THAT NEVER WERE\nYour 3rd Growth option lets you gain any one Power Card from a special set you create during Setup. When you gain a Power Card any other way, you may add one unchosen card to this set.",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Downpour Drenches the World",
+            Setup: "Put 1 Presenceicon.png on your starting board in the lowest-numbered Wetlands.",
+            "Play Style": "Cares about the question \"How useful is this Power in the current context?\" even more than most Spirits; it rarely plays all its Power Cards in any given Reclaim cycle (some get discarded to Growth), and for those it does play, it often has the option of using them multiple times.\nBenefits even more than most Spirits from having lots of Presence on the board, both for Rain and Mud Suppress Conflict and to facilitate its Unique Powers (by making more lands Wetlands).",
+            Complexity: "High",
+            "Special Rules": "DRENCH THE LANDSCAPE\nSpirit Actions and Special Rules treat your Sacredsiteicon.png as Wetlands in addition to the printed terrain.\nPOUR DOWN POWER ACROSS THE ISLAND\nFor each 2 Simple water.png you have, during the Fasticon.png/Slowicon.png phase you may either:\nGain 1 Energy; or\nRepeat a land-targeting Power Card by paying its cost again. (It need not target the same land.)\nUse scenario markers or spare game pieces to track uses of this rule. (Max 5 times per turn, no matter how much Simple water.png you have.)",
+            SpecialRulePhases: ['All']
+        },
+        {
+            Name: "Finder of Paths Unseen",
+            Setup: "Put 1 Presenceicon.png on your starting board in land #3. Put 1 Presenceicon.png on any board in land #1. Note that you have 6 Unique Power Cards.",
+            "Play Style": "All about moving the Invaders - and Dahanicon.png/Presenceicon.png/{{{width}}}px from time to time. Good at creating Invader-free \"safe-zones,\" due to its many movement Powers and its capacity to Isolate. Can't afford to Destroy Invaders too often without a way to re-add Destroyed Presenceicon.png, so either needs a big-hammer Major Power or to rely on its teammates for offense.\nChanges the topology of the board, which increases complexity for all players - particularly in larger games!",
+            Complexity: "Very High",
+            "Special Rules": "RESPONSIBILITIES TO THE DEAD\nAfter one of your Actions Destroys 1 or more Dahanicon.png/Invaders, or directly triggers their Destruction by moving them, Destroy 1 of your Presenceicon.png and lose 1 Energy. If you have no Energy to lose, Destroy another Presenceicon.png.\nOPEN THE WAYS\nYou may make up to two of your lands adjacent at a time. You may change which lands are adjacent once between Actions.",
             SpecialRulePhases: ['All']
         },
     ]
