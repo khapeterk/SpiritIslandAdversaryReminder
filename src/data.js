@@ -47,7 +47,7 @@ const data = {
     ],
     adversaries: [
         {
-            "name": "THE TSARDOM OF RUSSIA",
+            "Name": "THE TSARDOM OF RUSSIA",
             "Additional Loss Condition": "Hunters Swarm the Island: Put BEAST Destroyed by Adversary rules on this panel. If there are ever more BEAST on this panel than on the island, the Invaders win.",
             "Escalation": "Stalk the Predators: On each board, add 2 EXPLORER (total) among lands with BEAST. If you can't, instead add 2 EXPLORER among lands with BEAST on a different board.",
             "Level": {
@@ -72,7 +72,7 @@ const data = {
             }
         },
         {
-            "name": "THE KINGDOM OF ENGLAND",
+            "Name": "THE KINGDOM OF ENGLAND",
             "Additional Loss Condition": "Proud & Mighty Capital: If 7 or more TOWN/CITY are ever in a single land, the Invaders win.",
             "Escalation": "Building Boom: On each board with TOWN/CITY, Build in the land with the most TOWN/CITY.",
             "Level": {
@@ -97,7 +97,7 @@ const data = {
             }
         },
         {
-            "name": "THE KINGDOM OF SWEDEN",
+            "Name": "THE KINGDOM OF SWEDEN",
             "Additional Loss Condition": "None",
             "Escalation": "Swayed by the Invaders: After Invaders Explore into each land this Phase, if that land has at least as many Invaders as DAHAN, replace 1 DAHAN with 1 TOWN.",
             "Level": {
@@ -122,7 +122,7 @@ const data = {
             }
         },
         {
-            "name": "THE HAPSBURG MONARCHY (LIVESTOCK COLONY)",
+            "Name": "THE HAPSBURG MONARCHY (LIVESTOCK COLONY)",
             "Additional Loss Condition": "Irreparable Damage: Track how many BLIGHT come off the Blight Card during Ravages that do 8+ Damage to the land. If that number ever exceeds players, the Invaders win.",
             "Escalation": "Seek Prime Territory: After Exploring: on each board with 4 or fewer BLIGHT, add 1 TOWN to a land without TOWN/BLIGHT. On each board with 2 or fewer BLIGHT, do so again.",
             "Level": {
@@ -147,7 +147,7 @@ const data = {
             }
         },
         {
-            "name": "THE KINGDOM OF SCOTLAND",
+            "Name": "THE KINGDOM OF SCOTLAND",
             "Additional Loss Condition": "Trade Hub: If the number of Coastal lands with CITY is ever greater than (2 x # of boards), the Invaders win.",
             "Escalation": "Ports Sprawl Outward: On the single board with the most Coastal TOWN/CITY, add 1 TOWN to the N lands with the fewest TOWN (N = # of players.)",
             "Level": {
@@ -172,7 +172,7 @@ const data = {
             }
         },
         {
-            "name": "THE KINGDOM OF FRANCE (PLANTATION COLONY)",
+            "Name": "THE KINGDOM OF FRANCE (PLANTATION COLONY)",
             "Additional Loss Condition": "Sprawling Plantations: Before Setup, return all but 7 TOWN per player to the box. Invaders win if you ever cannot place a TOWN.",
             "Escalation": "Demand for New Cash Crops: After Exploring, on each board, pick a land of the shown terrain. If it has TOWN / CITY, add 1 BLIGHT. Otherwise, add 1 TOWN",
             "Level": {
@@ -197,7 +197,7 @@ const data = {
             }
         },
         {
-            "name": "THE KINGDOM OF BRANDENBURG-PRUSSIA",
+            "Name": "THE KINGDOM OF BRANDENBURG-PRUSSIA",
             "Additional Loss Condition": "None",
             "Escalation": "Land Rush: On each board with TOWN / CITY, add 1 TOWN to a land without TOWN.",
             "Level": {
@@ -221,6 +221,36 @@ const data = {
                 }
             }
         }
+    ],
+    spirits: [
+        {
+            Name: "Lightning's Swift Strike",
+            Setup: "Put 2 PRESENCE on your starting board in the highest-numbered Sands.",
+            "Play Style": "Virtually all offense to start with: without a more defensive teammate, Blight may become a problem. Excellent at destroying buildings, less good at containing Explorers. Using Thundering Destruction tends to be a burst affair: a turn or two of position and build up Energy, followed by a really big turn.\nStarting Powers are extremely focused on Air and Fire: good for Thundering Destruction, bad for Major Power versatility.",
+            Complexity: "Low",
+            "Special Rules": "SWIFTNESS OF LIGHTNING\nFor every AIR you have, you may use 1 SLOW Power as if it were FAST. (Power Cards or your Innate Powers.)"
+        },
+        {
+            Name: "River Surges in Sunlight",
+            Setup: "Put 1 Presenceicon.png on your starting board in the highest-numbered Wetlands.",
+            "Play Style": "While capable of some direct offense, River Surges in Sunlight is best at flooding out Explorers and Towns, displacing them from lands where they might Build or Ravage.\nThe ability to get free Sacred Sites makes a wide range of Powers more useful.",
+            Complexity: "Low",
+            "Special Rules": "RIVER'S DOMAIN\nYour Presenceicon.png in Wetlands counts as Sacredsiteicon.png."
+        },
+        {
+            Name: "Vital Strength of the Earth",
+            Setup: "Put 3 Presenceicon.png on your starting board: 2 in the highest-numbered Mountain, 1 in the highest-numbered Jungle.",
+            "Play Style": "Powerful but slow: has potent Power Cards and an excellent Energy income, but starts wtih only one card play per turn, and Growth is limited to adding one Presence per turn.\nAlso slow to change: learning new Powers carries slightly more cost than reclaiming played Power Cards",
+            Complexity: "Low",
+            "Special Rules": "EARTH'S VITALITY\nDefend 3 in every land where you have Sacredsiteicon.png."
+        },
+        {
+            Name: "Shadows Flicker Like Flame",
+            Setup: "Put 3 Presenceicon.png on your starting board: 2 in the highest-numbered Jungle and 1 in land #5",
+            "Play Style": "Good at causing Fear and picking off lone Explorers and Towns, containing the Invaders. Not so good at massive damage - may need to rely on allies to handle thoroughly colonized lands.\nThe ability to boost Range gives more flexibility to Range 0 Powers, and can be important in larger games.",
+            Complexity: "Low",
+            "Special Rules": "SHADOWS OF THE DAHAN\nWhenever you use a Power, you may pay 1 Energy to target a land with Dahanicon.png regardless of the Power's Range. (Power Cards or your Innate Powers.)"
+        },
     ]
 }
 
