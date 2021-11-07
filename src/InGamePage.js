@@ -1,8 +1,10 @@
 import data from './data';
 import { useRef, useState } from 'react';
+import { bigBoldText, boldText } from './Reusable';
+import { getSpiritSpecialRulePhases, getSpiritSpecialRules } from './Utils';
 
 export default function InGamePage(props) {
-    const { incrementAppIndex, currentAdversary, currentLevel, selectedNumberOfPlayers} = props;
+    const { incrementAppIndex, currentAdversary, currentLevel, selectedNumberOfPlayers, selectedSpirit } = props;
     const phases = data.phases;
     const adversaries = data.adversaries;
     const phaseNames = phases.map(phase => phase.name);
@@ -13,13 +15,25 @@ export default function InGamePage(props) {
     const nextIndex = () => currentIndex === phaseNames.length - 1 ? 0 : currentIndex + 1;
     const incrementIndex = () => { setCurrentIndex(nextIndex()) };
     const decrementIndex = () => { setCurrentIndex(previousIndex()) };
+    const renderSpecialRules = () => {
+        const phasesToRender = getSpiritSpecialRulePhases(selectedSpirit);
+        if (phasesToRender.includes(phaseNames[currentIndex]) || phasesToRender[0] === 'All') {
+            return (
+                <>
+                <div>{boldText(selectedSpirit + " Special Rules")}</div>
+                <div style={{padding: '0 20px'}}>{getSpiritSpecialRules(selectedSpirit)}</div>
+                </>
+            )
+        }
+    }
     return (
         <div ref={ref}>
-            <header> {selectedNumberOfPlayers} Players VS {adversaries[currentAdversary].name} Level: {currentLevel}</header>
+            {bigBoldText(selectedNumberOfPlayers + ' Players VS ' + adversaries[currentAdversary].Name + ' Level: ' + currentLevel)}
             <Breadcrumbs decrementIndex={decrementIndex} phases={phaseNames} previousPhase={phaseNames[previousIndex()]} currentPhase={phaseNames[currentIndex]} nextPhase={phaseNames[nextIndex()]} incrementIndex={incrementIndex} />
             <div>
                 {phaseContents[currentIndex]}
             </div>
+            {renderSpecialRules()}
             <button onClick={incrementAppIndex}>Reset</button>
         </div>
     )
@@ -37,5 +51,3 @@ function Breadcrumbs(props) {
         </div>
     )
 }
-
-function boldText(text) { return <b>{text}</b> }

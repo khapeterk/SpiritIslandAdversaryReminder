@@ -9,6 +9,13 @@ function RadioButton(props) {
     )
 }
 
+function boldText(text) { return <b>{text}</b> }
+function bigBoldText(text) { return <b style={{fontSize: '20px'}}>{text}</b> }
+function pageHeader(text) { return <div style={{textAlign: 'center'}}>{bigBoldText(text)}</div>}
+
 export {
-    RadioButton
+    RadioButton,
+    boldText,
+    bigBoldText,
+    pageHeader
 }

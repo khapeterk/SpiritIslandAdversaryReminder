@@ -228,28 +228,32 @@ const data = {
             Setup: "Put 2 PRESENCE on your starting board in the highest-numbered Sands.",
             "Play Style": "Virtually all offense to start with: without a more defensive teammate, Blight may become a problem. Excellent at destroying buildings, less good at containing Explorers. Using Thundering Destruction tends to be a burst affair: a turn or two of position and build up Energy, followed by a really big turn.\nStarting Powers are extremely focused on Air and Fire: good for Thundering Destruction, bad for Major Power versatility.",
             Complexity: "Low",
-            "Special Rules": "SWIFTNESS OF LIGHTNING\nFor every AIR you have, you may use 1 SLOW Power as if it were FAST. (Power Cards or your Innate Powers.)"
+            "Special Rules": "SWIFTNESS OF LIGHTNING\nFor every AIR you have, you may use 1 SLOW Power as if it were FAST. (Power Cards or your Innate Powers.)",
+            SpecialRulePhases: ['Fast Powers']
         },
         {
             Name: "River Surges in Sunlight",
-            Setup: "Put 1 Presenceicon.png on your starting board in the highest-numbered Wetlands.",
+            Setup: "Put 1 PRESENCE on your starting board in the highest-numbered Wetlands.",
             "Play Style": "While capable of some direct offense, River Surges in Sunlight is best at flooding out Explorers and Towns, displacing them from lands where they might Build or Ravage.\nThe ability to get free Sacred Sites makes a wide range of Powers more useful.",
             Complexity: "Low",
-            "Special Rules": "RIVER'S DOMAIN\nYour Presenceicon.png in Wetlands counts as Sacredsiteicon.png."
+            "Special Rules": "RIVER'S DOMAIN\nYour PRESENCE in Wetlands counts as HOLYSITE.",
+            SpecialRulePhases: ['All']
         },
         {
             Name: "Vital Strength of the Earth",
-            Setup: "Put 3 Presenceicon.png on your starting board: 2 in the highest-numbered Mountain, 1 in the highest-numbered Jungle.",
+            Setup: "Put 3 PRESENCE on your starting board: 2 in the highest-numbered Mountain, 1 in the highest-numbered Jungle.",
             "Play Style": "Powerful but slow: has potent Power Cards and an excellent Energy income, but starts wtih only one card play per turn, and Growth is limited to adding one Presence per turn.\nAlso slow to change: learning new Powers carries slightly more cost than reclaiming played Power Cards",
             Complexity: "Low",
-            "Special Rules": "EARTH'S VITALITY\nDefend 3 in every land where you have Sacredsiteicon.png."
+            "Special Rules": "EARTH'S VITALITY\nDefend 3 in every land where you have HOLYSITE.",
+            SpecialRulePhases: ['All']
         },
         {
             Name: "Shadows Flicker Like Flame",
-            Setup: "Put 3 Presenceicon.png on your starting board: 2 in the highest-numbered Jungle and 1 in land #5",
+            Setup: "Put 3 PRESENCE on your starting board: 2 in the highest-numbered Jungle and 1 in land #5",
             "Play Style": "Good at causing Fear and picking off lone Explorers and Towns, containing the Invaders. Not so good at massive damage - may need to rely on allies to handle thoroughly colonized lands.\nThe ability to boost Range gives more flexibility to Range 0 Powers, and can be important in larger games.",
             Complexity: "Low",
-            "Special Rules": "SHADOWS OF THE DAHAN\nWhenever you use a Power, you may pay 1 Energy to target a land with Dahanicon.png regardless of the Power's Range. (Power Cards or your Innate Powers.)"
+            "Special Rules": "SHADOWS OF THE DAHAN\nWhenever you use a Power, you may pay 1 Energy to target a land with DAHAN regardless of the Power's Range. (Power Cards or your Innate Powers.)",
+            SpecialRulePhases: ['Fast Powers', 'Slow Powers', 'Event']
         },
     ]
 }
