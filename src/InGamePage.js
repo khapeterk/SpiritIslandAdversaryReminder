@@ -2,8 +2,9 @@ import data from './data';
 import { useRef, useState } from 'react';
 
 export default function InGamePage(props) {
-    const { incrementAppIndex } = props;
+    const { incrementAppIndex, currentAdversary, currentLevel, selectedNumberOfPlayers} = props;
     const phases = data.phases;
+    const adversaries = data.adversaries;
     const phaseNames = phases.map(phase => phase.name);
     const phaseContents = phases.map(phase => phase.content);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,7 +15,7 @@ export default function InGamePage(props) {
     const decrementIndex = () => { setCurrentIndex(previousIndex()) };
     return (
         <div ref={ref}>
-            <header>In Game</header>
+            <header> {selectedNumberOfPlayers} Players VS {adversaries[currentAdversary].name} Level: {currentLevel}</header>
             <Breadcrumbs decrementIndex={decrementIndex} phases={phaseNames} previousPhase={phaseNames[previousIndex()]} currentPhase={phaseNames[currentIndex]} nextPhase={phaseNames[nextIndex()]} incrementIndex={incrementIndex} />
             <div>
                 {phaseContents[currentIndex]}
@@ -31,7 +32,6 @@ function Breadcrumbs(props) {
     return (
         <div style={breadcrumbsStyle}>
             <button onClick={decrementIndex}>{previousPhase}</button>
-            {/* {phaseNames.map((phase, index) => <div style={breadcrumbStyle} key={index}>{currentPhase === phase ? boldText(phase) : superscriptText(phase)}</div>)} */}
             {<div style={breadcrumbStyle}>{boldText(currentPhase)}</div>}
             <button onClick={incrementIndex}>{nextPhase}</button>
         </div>

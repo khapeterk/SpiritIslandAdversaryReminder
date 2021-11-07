@@ -4,7 +4,7 @@ import data from './data';
 import { removeMultipleRandomFromArray } from './Utils';
 
 export default function SetupPage(props) {
-    const { incrementAppIndex, decrementAppIndex, currentAdversary, currentLevel } = props;
+    const { incrementAppIndex, decrementAppIndex, currentAdversary, currentLevel, selectedNumberOfPlayers, setSelectedNumberOfPlayers} = props;
     const adversaries = data.adversaries;
     const adversarySetup = {
         "THE TSARDOM OF RUSSIA": [1, 4, 5],
@@ -19,7 +19,6 @@ export default function SetupPage(props) {
     const displayLevels = adversarySetup[adversaries[currentAdversary].name].filter(level => level <= currentLevel);
     const numberOfPlayersOptions = [1, 2, 3, 4, 5, 6];
     const boardsOptions = ['A', 'B', 'C', 'D', 'E', 'F'];
-    const [selectedNumberOfPlayers, setSelectedNumberOfPlayers] = useState(1);
     const [selectedBoards, setSelectedBoards] = useState([]);
     const getRandomBoards = () => { setSelectedBoards(removeMultipleRandomFromArray(boardsOptions, selectedNumberOfPlayers)) }
     const onClickNumberOfPlayers = (event) => { setSelectedNumberOfPlayers(parseInt(event.target.value)); }
@@ -36,8 +35,20 @@ export default function SetupPage(props) {
             <button onClick={decrementAppIndex}>Back</button>
             <button onClick={incrementAppIndex}>Start Game</button>
             <header>Board Setup</header>
-            {numberOfPlayersOptions.map((number) => <RadioButton onClick={onClickNumberOfPlayers} group="NumberOfPlayers" name={number + (number === 1 ? ' Player' : ' Players')} value={number} key={number} currentValue={selectedNumberOfPlayers} />)}
-            <button onClick={getRandomBoards} disabled={selectedNumberOfPlayers === 6}>Randomize Boards</button>
+            <div>
+                <span style={{display:'flex' }}>
+                    <span style={{textAlign:'right'}}>
+                    <div>
+                        {numberOfPlayersOptions.map((number) => <RadioButton onClick={onClickNumberOfPlayers} group="NumberOfPlayers" name={number + (number === 1 ? ' Player' : ' Players')} value={number} key={number} currentValue={selectedNumberOfPlayers} />)}
+                    </div>
+                    <div>
+                        <button onClick={getRandomBoards} disabled={selectedNumberOfPlayers === 6}>Randomize Boards</button>
+                    </div>
+                    </span>
+                    <span style={{flexGrow:1}}></span>
+                </span>
+
+            </div>
             <div>
                 {selectedNumberOfPlayers === 6 ? 'All Boards' : selectedBoards.join(', ')}
             </div>
