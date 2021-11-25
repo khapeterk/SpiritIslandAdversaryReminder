@@ -27,9 +27,8 @@ function getSpiritComplexities() {
 }
 
 function getSpiritNamesForComplexity(complexity) {
-    return data.spirits.filter((spirit) => spirit.Complexity === complexity || complexity === 'All').map((spirit) => spirit.Name);
+    return data.spirits.filter((spirit) => spirit.Complexity === complexity || complexity === 'All').map((spirit) => spirit.Name).sort();
 }
-
 
 function getSpiritsMap() {
     const spirits = {}
@@ -37,6 +36,18 @@ function getSpiritsMap() {
         spirits[spirit.Name] = spirit;
     })
     return spirits;
+}
+
+function getAdversariesMap() {
+    const adversaries = {}
+    data.adversaries.forEach((adversary) => {
+        adversaries[adversary.ShortName] = adversary;
+    })
+    return adversaries;
+}
+
+function getAdversary(adversaryShortName) {
+    return getAdversariesMap()[adversaryShortName];
 }
 
 function getSpiritSetup(spiritName) {
@@ -63,5 +74,7 @@ export {
     getSpiritSetup,
     getSpiritPlayStyle,
     getSpiritSpecialRulePhases,
-    getSpiritSpecialRules
+    getSpiritSpecialRules,
+    getAdversariesMap,
+    getAdversary
 }
