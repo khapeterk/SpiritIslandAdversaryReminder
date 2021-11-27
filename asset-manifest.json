@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SpiritIslandAdversaryReminder/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/SpiritIslandAdversaryReminder/static/js/main.29dcd060.chunk.js",
-    "main.js.map": "/SpiritIslandAdversaryReminder/static/js/main.29dcd060.chunk.js.map",
+    "main.js": "/SpiritIslandAdversaryReminder/static/js/main.bf47a067.chunk.js",
+    "main.js.map": "/SpiritIslandAdversaryReminder/static/js/main.bf47a067.chunk.js.map",
     "runtime-main.js": "/SpiritIslandAdversaryReminder/static/js/runtime-main.764b0e9e.js",
     "runtime-main.js.map": "/SpiritIslandAdversaryReminder/static/js/runtime-main.764b0e9e.js.map",
     "static/js/2.25db7d4d.chunk.js": "/SpiritIslandAdversaryReminder/static/js/2.25db7d4d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.764b0e9e.js",
     "static/js/2.25db7d4d.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.29dcd060.chunk.js"
+    "static/js/main.bf47a067.chunk.js"
   ]
 }
