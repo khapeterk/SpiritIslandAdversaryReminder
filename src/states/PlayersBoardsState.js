@@ -1,5 +1,5 @@
-import { Page, RadioButton, singlePluralWord } from "../Reusable";
-import { removeMultipleRandomFromArray } from "../Utils";
+import { Page, RadioButton } from "../Reusable";
+import { removeMultipleRandomFromArray, singlePluralWord } from "../Utils";
 import AdversariesState from "./AdversariesState";
 
 function PlayersBoardsPage(props) {

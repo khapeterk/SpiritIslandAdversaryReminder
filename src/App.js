@@ -3,15 +3,15 @@ import PlayersBoardsState from './states/PlayersBoardsState';
 
 function App() {
   const [settings, setSettings] = useState({
-    selectedNumberOfPlayers: null,
+    selectedNumberOfPlayers: 1,
     selectedBoards: [],
     selectedSpirit: '',
     selectedAdversary: '',
-    selectedLevel: '1'
+    selectedLevel: 1
   });
   const [state, setState] = useState(PlayersBoardsState);
   return (
-    <div>
+    <div style={{padding: '5px'}}>
       {state.page({ settings, setSettings, setState })}
     </div>
   );

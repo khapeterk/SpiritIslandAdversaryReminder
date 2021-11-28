@@ -1,10 +1,10 @@
 import { AdversaryGameplayChanges, Checkbox, Page } from '../Reusable';
+import AdversarySetupState from './AdversarySetupState';
 import GainEnergyState from './GainEnergyState';
-import TimePassesState from './TimePassesState';
 
-function GrowthPage(props) {
+function FirstGrowthPage(props) {
   const { settings, setState } = props;
-  const leftButton = { label: 'Time Passes', disabled: false, onClick: () => setState(TimePassesState) };
+  const leftButton = { label: 'Adversary Setup', disabled: false, onClick: () => setState(AdversarySetupState) };
   const rightButton = { label: 'Gain Energy', disabled: false, onClick: () => setState(GainEnergyState) };
   return (
     <Page header={'Growth'} leftButton={leftButton} rightButton={rightButton}>
@@ -14,6 +14,6 @@ function GrowthPage(props) {
   )
 }
 
-const GrowthState = { page: GrowthPage }
+const FirstGrowthState = { page: FirstGrowthPage }
 
-export default GrowthState;
+export default FirstGrowthState;

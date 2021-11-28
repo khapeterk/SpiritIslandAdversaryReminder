@@ -65,6 +65,9 @@ function getSpiritSpecialRulePhases(spiritName) {
 function getSpiritSpecialRules(spiritName) {
     return getSpiritsMap()[spiritName]["Special Rules"];
 }
+function singlePluralWord(text, number) { return number > 1 ? text + 's' : text }
+
+function shouldHighImmigration(settings) { return settings.selectedAdversary === 'ENGLAND' && settings.selectedLevel >= 3 };
 
 export {
     getRandomIndex,
@@ -76,5 +79,7 @@ export {
     getSpiritSpecialRulePhases,
     getSpiritSpecialRules,
     getAdversariesMap,
-    getAdversary
+    getAdversary,
+    singlePluralWord,
+    shouldHighImmigration
 }
